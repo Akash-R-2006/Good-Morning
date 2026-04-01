@@ -1,4 +1,4 @@
-name: Failing Workflow
+name: Fixed Workflow
 
 on: [push]
 
@@ -10,5 +10,5 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Fail Step
-      run: wrongcommand
+    - name: Success Step
+      run: echo "Workflow fixed successfully"
